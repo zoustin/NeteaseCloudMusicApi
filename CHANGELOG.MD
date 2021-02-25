@@ -1,4 +1,89 @@
 # 更新日志
+### 4.0.6 | 2021.2.20
+- 修复 eapi 接口无法正确解密response的问题 [#1138](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/1138)
+
+### 4.0.5 | 2021.2.19
+- 修复红心接口默认不红心的问题 [#1126](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/1126)
+
+### 4.0.4 | 2021.2.18
+- 移除云村热评接口(官方下架) [#1111](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/1111)
+- 更新 app version
+
+### 4.0.3 | 2021.1.28
+- 修复云盘接口中文音乐信息乱码的问题 [#1108](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/1108)
+
+### 4.0.2 | 2021.1.18
+- 修复未绑定手机号对歌单添加或删除歌曲无响应的问题 [#1099](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/1099)
+
+### 4.0.1 | 2021.1.09
+- 新增歌单详情动态接口 [#1088](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/1088)
+
+### 4.0.0 | 2021.1.03
+- 新增云盘上传接口,新增二维码登录相关接口和相关demo(http://localhost:3000/qrlogin.html, http://localhost:3000/cloud.html),更新 d.ts
+
+- 升级部分接口加密方法("linuxapi" 都替换到了"api")
+
+- 更新 `login/status` 接口(返回字段和之前不一样)
+
+### 3.47.5 | 2020.12.20
+- 更新appver [#1060](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/1060)
+
+### 3.47.4 | 2020.12.03
+- 修复收藏的专栏接口无法调用的问题 [#1042](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/1042)
+
+### 3.47.3 | 2020.11.22
+- 新增歌手详情接口 [#1035](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/1035)
+
+### 3.47.2 | 2020.11.15
+- 新增关注歌手新歌/新MV接口 [#1028](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/1028)
+
+### 3.47.1 | 2020.11.14
+- 修复使用post请求取消喜欢音乐会失败的问题 [#1024](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/1024)
+
+- 新增抱一抱评论和评论抱一抱列表接口 [#1016](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/1016)
+
+- 新增收藏的专栏接口[#1026](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/1026)
+
+### 3.46.1 | 2020.11.7
+- 修复私信音乐接口出现风险提示的问题
+
+### 3.46.0 | 2020.11.7
+- 添加私信音乐接口 [#1016](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/1016)
+
+- 添加最近联系人接口
+
+- 修复用户动态数量不准确问题 [#1010](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/1010)
+
+- 修复 cloudsearch 接口分页问题 [#1015](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/1015)
+
+### 3.45.3 | 2020.11.1
+- `相似歌手`,`首页-发现-圆形图标入口列表`接口增加匿名token[#877](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/877) [#988](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/988)
+
+- 修复`音乐 url`接口POST方式手动传入cookie报错问题 [#1005](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/1005)
+
+### 3.45.2 | 2020.10.26
+- 云贝完成任务接口增加`depositCode`参数
+
+### 3.45.1 | 2020.10.25
+- 修复代理配置失效的问题 [#992](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/992)
+
+- 修复新碟上架不返回周数据的问题,修复推荐新音乐接口返回数量问题,并添加limit参数支持 [#981](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/981)
+
+- 添加`云贝`相关接口 [#985](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/985)
+
+- 添加`用户账号信息`接口
+
+- 替换接口文件所有http url 为 https
+
+### 3.44.0 | 2020.10.17
+- 更新`电台详情`,`电台节目详情`接口 [#977](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/977)
+
+#### Breaking change
+- `电台详情`接口更新后数据结构有变化
+
+### 3.43.0 | 2020.10.16
+- 新增`电台订阅者列表`接口 [#971](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/971)
+
 ### 3.42.4 | 2020.10.07
 - 修复新评论接口分页参数问题
 

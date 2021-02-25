@@ -1,5 +1,4 @@
 // 红心与取消红心歌曲
-const { toBoolean } = require('../util')
 
 module.exports = (query, request) => {
   query.like = query.like == 'false' ? false : true
